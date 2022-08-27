@@ -1,6 +1,9 @@
 # `Porgramming hero Team Project `
 
-## `Setup Project ` Files  frontend and  backend 
+
+## `Step  01 || Project File Setup` 
+
+### `Setup Project ` Files  frontend and  backend 
 #### `Install  Packege ` for backend development
 
 ```bash
@@ -48,4 +51,30 @@ app.listen(PORT,(error)=>{
         console.log(`server is running port ${PORT}`);
     }
 })
+```
+
+## `Step  02 ||  Database Connection` 
+### `dbConnect.js` add Code 
+```javascript
+const mongoose = require('mongoose');
+
+module.exports = dbConnect = async()=>{
+    try {
+        const response = await mongoose.connect(process.env.DB_URL,{useNewUrlParser:true});
+        console.log("Database connected........")
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+```
+
+
+### `server.js` add Code 
+```javascript
+const dbConnect = require('./config/dbConnect');
+
+// db connect  called function........
+dbConnect();
+
 ```

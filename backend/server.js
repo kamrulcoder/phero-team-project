@@ -4,6 +4,7 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const dbConnect = require('./config/dbConnect');
 
 
 app.get('/',(req,res)=>{
@@ -24,6 +25,8 @@ app.use(cors({
     credentials : true
 }));
 
+// db connect  called function........
+dbConnect();
 
 // Running server   create function  on Port 
 const PORT = process.env.PORT || 4000
