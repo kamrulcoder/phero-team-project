@@ -78,3 +78,36 @@ const dbConnect = require('./config/dbConnect');
 dbConnect();
 
 ```
+
+
+## `Part 03 || Fronted Setup Sass and sass  components structure  `
+
+
+### `node-sass` Packege install 
+```bash
+yarn add node-sass
+```
+### `Index.js ` file code for sass include 
+```javascript
+import './main.scss';
+
+```
+
+### Create Files -> 
+
+1. src   -> 
+    1. Components
+       1. auth
+       2. dashboard
+       3. home
+    2. sass
+       1. base
+          1. _reset.sass
+       2. components
+          1. auth
+          2. dashboard
+          3. home
+       3. utilis
+          1. _utlis.sass
+    
+  
