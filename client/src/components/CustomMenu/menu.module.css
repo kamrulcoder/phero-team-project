@@ -1,0 +1,54 @@
+.customMenu{
+background-color: #8BB1A2;
+padding: 45px 30px;
+position: relative;
+min-height: 100px;
+}
+.customMenu .imgBox{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 5px solid white;
+    position: absolute;
+    top: 45px;
+}
+.customMenu .imgBox img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.customMenu .menuContent p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.customMenu .menuContent{
+    margin-left: 205px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #303030;
+}
+.menuItem a:hover{
+    background-color: #e3e3e3;
+}
+.menuItem a{
+    display: flex;
+    padding: 0px;
+    min-height: 180px;
+    background-color: #F6F6F6;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menuItem a img{
+    width: 50px;
+}
+.menuItem a p{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #303030;
+}
