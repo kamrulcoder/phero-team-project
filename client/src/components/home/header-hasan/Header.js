@@ -16,7 +16,7 @@ export default function Header() {
                 <section className={`${styles.headerTopNav} d-none d-lg-flex`}>
                     <Container>
                         <div className='d-flex align-items-center justify-content-end' >
-                            <a href="/" className={`d-flex align-items-center gap-1 ${styles.btnLink}`}><img height="20px" src={lock} alt="" /> Login</a>
+                            <Link to="/login" className={`d-flex align-items-center gap-1 ${styles.btnLink}`}><img height="20px" src={lock} alt="Image not found " /> Login</Link>
                         </div>
                     </Container>
                 </section>
@@ -58,7 +58,9 @@ export default function Header() {
                                         <i class="fas fa-search"></i>
                                     </Button>
                                 </Form>
+                                <Link to="/cart" >
                                 <i className={`fas fa-shopping-cart ${styles.textPrimary} fs-4`}></i>
+                                </Link>
                                 <Link to="/menu" className={`${styles.textPrimary} d-none d-lg-block`}><i class="fas fa-bars"></i></Link>
                                 <Button variant='outline' className='bg-transparent border-0 d-flex d-lg-none'>
                                     <i class="fas fa-search"></i>
