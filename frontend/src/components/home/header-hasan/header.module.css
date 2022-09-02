@@ -1,0 +1,28 @@
+.textPrimary{
+    color:#03674B;
+}
+.headerTopNav{
+    background: #EEF4F2;
+    padding: 8px 0;
+}
+.btnLink{
+    color:#03674B;
+    text-decoration: none;
+    font-weight: 500;
+}
+.headerTopNav .btnLink{
+font-size: 14px;
+}
+
+.navbar .navLink a{
+    color:#2e2e2e;
+    font-weight: 600;
+    margin-right: 14px;
+}
+.searchBox{
+    background-color: #E4EAEE;
+    border-radius: 6px;
+}
+.navContainer{
+    box-shadow: 4px 4px 8px rgba(0,0,0,.1);
+}
