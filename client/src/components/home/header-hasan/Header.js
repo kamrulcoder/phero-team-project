@@ -8,6 +8,8 @@ import styles from "./header.module.css"
 import lock from "./../../../images/lock.svg"
 import Button from 'react-bootstrap/esm/Button';
 import { Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap'
+
 //#EEF4F2
 export default function Header() {
     return (
@@ -28,10 +30,12 @@ export default function Header() {
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" className={`border-0 ${styles.menuHamBurger}`}>
                                     <i className={`fas fa-th-large fs-4 ${styles.textPrimary}`}></i>
                                 </Navbar.Toggle>
-                                <Navbar.Brand href="#home" className={`${styles.textPrimary} fs-3 fw-bold`}>R</Navbar.Brand>
+                                <LinkContainer to="/">
+                                <Navbar.Brand  className={`${styles.textPrimary} fs-3 fw-bold`}> R</Navbar.Brand>
+                                </LinkContainer>
                                 <Navbar.Collapse id="basic-navbar-nav" className={`${styles.navLink}`}>
                                     <Nav className="me-auto ">
-                                        <Nav.Link href="#home">Home</Nav.Link>
+                                        <Nav.Link > <Link to="/"> Home  </Link> </Nav.Link>
                                         <NavDropdown title="Categories" id="basic-nav-dropdown">
                                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                             <NavDropdown.Item href="#action/3.2">
@@ -43,7 +47,7 @@ export default function Header() {
                                                 Separated link
                                             </NavDropdown.Item>
                                         </NavDropdown>
-                                        <Nav.Link href="#home">Favourite</Nav.Link>
+                                        <Nav.Link > <Link to="/"> Favourite  </Link></Nav.Link>
                                     </Nav>
                                 </Navbar.Collapse>
                             </Navbar>
@@ -55,15 +59,15 @@ export default function Header() {
                                         aria-label="Search"
                                     />
                                     <Button variant='outline' className='bg-transparent border-0'>
-                                        <i class="fas fa-search"></i>
+                                        <i className="fas fa-search"></i>
                                     </Button>
                                 </Form>
                                 <Link to="/cart" >
                                 <i className={`fas fa-shopping-cart ${styles.textPrimary} fs-4`}></i>
                                 </Link>
-                                <Link to="/menu" className={`${styles.textPrimary} d-none d-lg-block`}><i class="fas fa-bars"></i></Link>
+                                <Link to="/menu" className={`${styles.textPrimary} d-none d-lg-block`}><i className="fas fa-bars"></i></Link>
                                 <Button variant='outline' className='bg-transparent border-0 d-flex d-lg-none'>
-                                    <i class="fas fa-search"></i>
+                                    <i className="fas fa-search"></i>
                                 </Button>
                             </div>
                         </div>
