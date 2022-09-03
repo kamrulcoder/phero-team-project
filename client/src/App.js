@@ -9,6 +9,7 @@ import Cart from "./pages/cart/Cart";
 import Checkout from "./pages/checkout/Checkout";
 import Register from "./pages/auth/Register";
 import Login from "./pages/auth/Login";
+// import Dashboard from "./dashbaord";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         {/* login registration routes  */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+
 
         {/* backend all routes start  */}
       </Routes>

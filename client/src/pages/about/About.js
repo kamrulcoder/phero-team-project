@@ -25,72 +25,64 @@ function About() {
   return (
     <>
       <Header></Header>
-      <br />
-      <br />
-      <div className="d-flex container">
-        <div className="w-50">
-          <div className="w-full me-4">
-            <h2>Who Are We?</h2>
-            <h3>6amTech - Your Early Bird IT partner</h3>
-            <p>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="about-1-1.jpg"
+              class="d-block mx-lg-auto img-fluid rounded"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Who Are We?</h1>
+            <h3 class="fw-bold lh-1 mb-3">
+              6amTech - Your Early Bird IT partner
+            </h3>
+
+            <p class="lead">
               6amTech is a Bangladeshi technology company that develop web,
               mobile, and computer software for its IT partner. They are selling
               software in partnership with Envato, the world's largest software
               marketplace. 6amTech is one of the fastest-growing software
               providers in codecanyon.
             </p>
-            <p>
-              6amTech was founded by Sultan Mahamud and Nipon Roy in 2020 to
-              develop and sell software licenses for entrepreneurs and
-              start-ups. Their main goal was to provide software to
-              entrepreneurs at a low cost.
-            </p>
             <ul>
-              <li>Web application development.</li>
-              <li>Mobile application development.</li>
-              <li>UI/UX design.</li>
-              <li>IT consultancy.</li>
+              <li class="lead">Web application development.</li>
+              <li class="lead">Mobile application development.</li>
+              <li class="lead">UI/UX design.</li>
+              <li class="lead">IT consultancy.</li>
             </ul>
           </div>
         </div>
-        <div className="w-50">
-          <div className="w-100">
-            <div className="d-flex">
-              <div>
-                <img className="img-fluid" src="about-1-1.jpg" alt="" />
-              </div>
-              <div>
-                <img className="img-fluid" src="about-1-2.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div className="container">
-        <div className="d-flex">
-          <div className="w-50">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
             <img
-              className="img-fluid d-flex justify-content-center"
               src="about-2.png"
-              alt=""
+              class="d-block mx-lg-auto img-fluid rounded"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
             />
           </div>
-          <div className="w-50">
-            <h3>HOW WE DO?</h3>
-            <h2>Our development lifecycle.</h2>
-            <div>
-              <div>
-                <img src="" alt="" />
-                <div>
-                  {dev_life_cycle.map((element) => (
-                    <>
-                      <h4>{element[0]}</h4>
-                      <p>{element[1]}</p>
-                    </>
-                  ))}
-                </div>
-              </div>
+          <div class="col-lg-6">
+            <h3 class="fw-bold lh-1 mb-3">HOW WE DO?</h3>
+            <h1 class="display-5 fw-bold lh-1 mb-3">
+              Our development lifecycle.
+            </h1>
+            <div class="lead">
+              {dev_life_cycle.map((element) => (
+                <>
+                  <h4>{element[0]}</h4>
+                  <p>{element[1]}</p>
+                </>
+              ))}
             </div>
           </div>
         </div>
