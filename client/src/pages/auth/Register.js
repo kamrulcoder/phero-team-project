@@ -37,10 +37,10 @@ function Register() {
         <div className={styles.logo}>
           <Link to="/">
             {" "}
-            <img src="img/logo.png" alt="Image not found " />
+            <Image src="img/logo.png" alt="Image not found " />
           </Link>
           <p>
-            If you have registered <Link to="/login">Register</Link>
+            If you have registered <Link to="/login">Login</Link>
           </p>
         </div>
 
