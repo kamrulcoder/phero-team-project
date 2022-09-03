@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import Container from 'react-bootstrap/esm/Container'
-import Footer from '../../components/home/footer-hasan/Footer'
-import Header from '../../components/home/header-hasan/Header'
-import styles from "./home.module.css"
-function Home() {
-    return (
-        <>
-            <Header></Header>
-            <Container>Home</Container>
-            <Footer></Footer>
-        </>
-    )
-=======
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import Container from "react-bootstrap/esm/Container";
@@ -23,39 +8,40 @@ import ProductItem from "../../components/home/productItem/ProductItem";
 import Slider from "../../components/home/slider/Slider";
 import BigButton from "../../components/customComponents/BigButton"
 import styles from "./home.module.css";
+import Footer from "../../components/home/footer-hasan/Footer";
 function Home() {
-  return (
-    <>
-      <Header></Header>
-      <Slider></Slider>
+    return (
+        <>
+            <Header></Header>
+            <Slider></Slider>
 
-      <HeaderSecion title="Catagories   " />
-      <HomeCatagory></HomeCatagory>
+            <HeaderSecion title="Catagories   " />
+            <HomeCatagory></HomeCatagory>
 
-      <HeaderSecion title="Daily Needs  " />
-      <Container>
-        <Row>
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-        </Row>
-      </Container>
+            <HeaderSecion title="Daily Needs  " />
+            <Container>
+                <Row>
+                    <ProductItem />
+                    <ProductItem />
+                    <ProductItem />
+                    <ProductItem />
+                </Row>
+            </Container>
 
-      <HeaderSecion title="Daily Needs  " />
-      <Container>
-        <Row>
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <BigButton   title="See More "/>
-            
-        </Row>
-      </Container>
-    </>
-  );
->>>>>>> e72b057a8f581cbedb26a6be94d91100974ae200
+            <HeaderSecion title="Daily Needs  " />
+            <Container>
+                <Row>
+                    <ProductItem />
+                    <ProductItem />
+                    <ProductItem />
+                    <ProductItem />
+                    <BigButton title="See More " />
+
+                </Row>
+            </Container>
+            <Footer></Footer>
+        </>
+    );
 }
 
 export default Home;

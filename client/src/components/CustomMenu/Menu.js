@@ -15,6 +15,7 @@ import policy from './../../images/policy.svg'
 import terms from './../../images/terms.svg'
 import users from './../../images/users-svgrepo-com.svg'
 import { Link } from 'react-router-dom';
+import Footer from '../home/footer-hasan/Footer';
 const CustomMenu = () => {
     const menuItem = [
         { name: 'My Order', icon: orders },
@@ -41,7 +42,7 @@ const CustomMenu = () => {
                                 <img src="https://thumbs.dreamstime.com/z/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" alt="" />
                             </div>
                         </div>
-                        <div className={`${styles.menuContent}`}>
+                        <div className={`${styles.menuContent} d-none d-lg-block`}>
                             <p>Guest</p>
                             <p>madebyhasan@test.com</p>
                         </div>
@@ -58,7 +59,7 @@ const CustomMenu = () => {
                     </div>
                 </Container>
             </section>
-
+            <Footer></Footer>
         </>
     );
 };
