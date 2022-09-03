@@ -2,12 +2,11 @@ import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import Container from "react-bootstrap/esm/Container";
 import HeaderSecion from "../../components/customComponents/headerSection/HeaderSecion";
-import BigButton from "../../components/customComponts/BigButton";
-import CatagoryItem from "../../components/home/catagoryItem/CatagoryItem";
 import HomeCatagory from "../../components/home/catagoryItem/HomeCatagory";
 import Header from "../../components/home/header-hasan/Header";
 import ProductItem from "../../components/home/productItem/ProductItem";
 import Slider from "../../components/home/slider/Slider";
+import BigButton from "../../components/customComponents/BigButton"
 import styles from "./home.module.css";
 function Home() {
   return (
@@ -35,7 +34,7 @@ function Home() {
           <ProductItem />
           <ProductItem />
           <ProductItem />
-          <BigButton  title="See More "/>
+          <BigButton   title="See More "/>
             
         </Row>
       </Container>
