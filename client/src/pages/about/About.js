@@ -1,4 +1,6 @@
 import React from "react";
+import HeaderSecion from "../../components/customComponents/headerSection/HeaderSecion";
+import Header from "../../components/home/header-hasan/Header";
 import styles from "./about.module.css";
 
 function About() {
@@ -22,49 +24,74 @@ function About() {
   ];
   return (
     <>
-      <div className="d-flex w-50">
-        <div>
-          <h2>Who Are We?</h2>
-          <h3>6amTech - Your Early Bird IT partner</h3>
-          <p>
-            6amTech is a Bangladeshi technology company that develop web,
-            mobile, and computer software for its IT partner. They are selling
-            software in partnership with Envato, the world's largest software
-            marketplace. 6amTech is one of the fastest-growing software
-            providers in codecanyon.
-          </p>
-          <p>
-            6amTech was founded by Sultan Mahamud and Nipon Roy in 2020 to
-            develop and sell software licenses for entrepreneurs and start-ups.
-            Their main goal was to provide software to entrepreneurs at a low
-            cost.
-          </p>
-          <ul>
-            <li>Web application development.</li>
-            <li>Mobile application development.</li>
-            <li>UI/UX design.</li>
-            <li>IT consultancy.</li>
-          </ul>
+      <Header></Header>
+      <br />
+      <br />
+      <div className="d-flex container">
+        <div className="w-50">
+          <div className="w-full me-4">
+            <h2>Who Are We?</h2>
+            <h3>6amTech - Your Early Bird IT partner</h3>
+            <p>
+              6amTech is a Bangladeshi technology company that develop web,
+              mobile, and computer software for its IT partner. They are selling
+              software in partnership with Envato, the world's largest software
+              marketplace. 6amTech is one of the fastest-growing software
+              providers in codecanyon.
+            </p>
+            <p>
+              6amTech was founded by Sultan Mahamud and Nipon Roy in 2020 to
+              develop and sell software licenses for entrepreneurs and
+              start-ups. Their main goal was to provide software to
+              entrepreneurs at a low cost.
+            </p>
+            <ul>
+              <li>Web application development.</li>
+              <li>Mobile application development.</li>
+              <li>UI/UX design.</li>
+              <li>IT consultancy.</li>
+            </ul>
+          </div>
         </div>
         <div className="w-50">
-          <img className="overlap-grid" src="about-1-1.jpg" alt="" />
-          <img className="overlap-grid-2" src="about-1-2.jpg" alt="" />
+          <div className="w-100">
+            <div className="d-flex">
+              <div>
+                <img className="img-fluid" src="about-1-1.jpg" alt="" />
+              </div>
+              <div>
+                <img className="img-fluid" src="about-1-2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
 
-      <h3>HOW WE DO?</h3>
-      <h2>Our development lifecycle.</h2>
-      <div>
-        <div>
-          <img src="" alt="" />
-          <div>
-            {dev_life_cycle.map((element) => (
-              <>
-                <h4>{element[0]}</h4>
-                <p>{element[1]}</p>
-              </>
-            ))}
+      <div className="container">
+        <div className="d-flex">
+          <div className="w-50">
+            <img
+              className="img-fluid d-flex justify-content-center"
+              src="about-2.png"
+              alt=""
+            />
+          </div>
+          <div className="w-50">
+            <h3>HOW WE DO?</h3>
+            <h2>Our development lifecycle.</h2>
+            <div>
+              <div>
+                <img src="" alt="" />
+                <div>
+                  {dev_life_cycle.map((element) => (
+                    <>
+                      <h4>{element[0]}</h4>
+                      <p>{element[1]}</p>
+                    </>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
