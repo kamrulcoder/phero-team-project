@@ -8,38 +8,40 @@ import ProductItem from "../../components/home/productItem/ProductItem";
 import Slider from "../../components/home/slider/Slider";
 import BigButton from "../../components/customComponents/BigButton"
 import styles from "./home.module.css";
+import Footer from "../../components/home/footer-hasan/Footer";
 function Home() {
-  return (
-    <>
-      <Header></Header>
-      <Slider></Slider>
+    return (
+        <>
+            <Header></Header>
+            <Slider></Slider>
 
-      <HeaderSecion title="Catagories   " />
-      <HomeCatagory></HomeCatagory>
+            <HeaderSecion title="Catagories   " />
+            <HomeCatagory></HomeCatagory>
 
-      <HeaderSecion title="Daily Needs  " />
-      <Container>
-        <Row>
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-        </Row>
-      </Container>
+            <HeaderSecion title="Daily Needs  " />
+            <Container>
+                <Row>
+                    <ProductItem />
+                    <ProductItem />
+                    <ProductItem />
+                    <ProductItem />
+                </Row>
+            </Container>
 
-      <HeaderSecion title="Daily Needs  " />
-      <Container>
-        <Row>
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <BigButton   title="See More "/>
-            
-        </Row>
-      </Container>
-    </>
-  );
+            <HeaderSecion title="Daily Needs  " />
+            <Container>
+                <Row>
+                    <ProductItem />
+                    <ProductItem />
+                    <ProductItem />
+                    <ProductItem />
+                    <BigButton title="See More " />
+
+                </Row>
+            </Container>
+            <Footer></Footer>
+        </>
+    );
 }
 
 export default Home;
