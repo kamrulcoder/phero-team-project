@@ -9,6 +9,7 @@ import Cart from "./pages/cart/Cart";
 import Checkout from "./pages/checkout/Checkout";
 import Register from "./pages/auth/Register";
 import Login from "./pages/auth/Login";
+import OrderSuccess from "./pages/cart/OrderSuccess";
 // import Dashboard from "./dashbaord";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/order-success" element={<OrderSuccess />} />
         <Route path="/checkout" element={<Checkout />} />
 
         <Route path="/menu" element={<CustomMenu />}></Route>
