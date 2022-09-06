@@ -1,0 +1,30 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fafafa;
+  line-height: 5px;
+}
+.empty {
+  color: #01684b;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.emptys {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.text {
+  text-align: center;
+}
+.btn {
+  margin-right: 10px;
+  background-color: #03694c;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+}
