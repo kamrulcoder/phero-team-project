@@ -1,0 +1,72 @@
+footer{
+    background-color: #ECF4F2;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #515755;
+}
+.logo{
+    display: block;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.footerTitle{
+    color: #515755;
+    font-weight: 800;
+    font-size: 18px;
+}
+.newsLetter{
+    background: #fff;
+    border-radius: 8px;
+    margin: 15px 0 ;
+    padding: 5px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+}
+.newsLetter input::placeholder{
+    color: #E4EAEF;
+}
+.newsLetter button{
+    background-color: #03674B;
+    border-color: #03674B;
+    font-size: 14px;
+}
+footer p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.icon{
+    font-size: 25px;
+}
+.icon:nth-child(2){
+    color: #2E77B6;
+}
+.icon:nth-child(3){
+    color: #EA1414;
+}
+.icon:nth-child(1){
+    color: #3C5998;
+}
+.container{
+    max-width: 1200px !important;
+}
+.footerLink{
+    color: #515755;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+hr{
+    border-top-color: #ababab !important;
+}
+.credit{
+    font-size: 12px;
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    footer *{
+        text-align: center;
+    }
+    
+}
