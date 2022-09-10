@@ -9,8 +9,16 @@ import Cart from "./pages/cart/Cart";
 import Checkout from "./pages/checkout/Checkout";
 import Register from "./pages/auth/Register";
 import Login from "./pages/auth/Login";
+import { useRoutes } from "react-router-dom";
+import Themeroutes from "./dashbaord/routes/Router";
+import FullLayout from "./dashbaord/layouts/FullLayout";
+import Tables from "./dashbaord/views/ui/Tables";
+import Starter from "./dashbaord/views/Starter";
+// import Dashboard from "./dashbaord";
 
 function App() {
+  // const routing = useRoutes(Themeroutes);
+
   return (
     <div className="App">
       <Routes>
@@ -26,6 +34,18 @@ function App() {
         {/* login registration routes  */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
+        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+        {/* <div className="dark">{routing}</div> */}
+
+        <Route path="/dashboard" element={<FullLayout />} >
+        <Route index element={<Starter />} />
+
+        </Route>
+
+
+        
+
 
         {/* backend all routes start  */}
       </Routes>
