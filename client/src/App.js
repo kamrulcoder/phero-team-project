@@ -14,6 +14,7 @@ import Themeroutes from "./dashbaord/routes/Router";
 import FullLayout from "./dashbaord/layouts/FullLayout";
 import Tables from "./dashbaord/views/ui/Tables";
 import Starter from "./dashbaord/views/Starter";
+import Order from "./dashbaord/views/ui/order/Order";
 // import Dashboard from "./dashbaord";
 
 function App() {
@@ -38,14 +39,10 @@ function App() {
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         {/* <div className="dark">{routing}</div> */}
 
-        <Route path="/dashboard" element={<FullLayout />} >
-        <Route index element={<Starter />} />
-
+        <Route path="/dashboard" element={<FullLayout />}>
+          <Route index element={<Starter />} />
+          <Route path="/dashboard/order" element={<Order />} />
         </Route>
-
-
-        
-
 
         {/* backend all routes start  */}
       </Routes>

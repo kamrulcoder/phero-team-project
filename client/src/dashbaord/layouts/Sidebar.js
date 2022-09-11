@@ -9,6 +9,12 @@ const navigation = [
     icon: "bi bi-speedometer2",
   },
   {
+    title: "Order",
+    href: "/dashboard/order",
+
+    icon: "bi bi-speedometer2",
+  },
+  {
     title: "Alert",
     href: "/alerts",
     icon: "bi bi-bell",
